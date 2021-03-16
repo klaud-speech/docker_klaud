@@ -81,9 +81,33 @@ ls
 * 컨테이너 내부에서는 호스트 운영체제에 있는 프로세스는 볼 수 없음.
 
 
+#### docker 중지
+```
+docker stop test-container
+```
+
+#### docker 컨테이너 삭제
+```
+docker rm test-container
+```
 
 
+### 도커 허브에 이미지(Image) 푸시하기
+```
+docker login
+```
+klaud/asdlfaldfj
 
+##### 이미지 생성
+
+```
+docker tag test klaud/test
+```
+
+#### 이미지를 도커허브에 푸시
+```
+docker push klaud/test
+```
 
 
 
